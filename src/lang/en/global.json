@@ -1,0 +1,7 @@
+{
+  "information": {
+    "greeting": "Hello 👋",
+    "introduction": "I'm {{name}}",
+    "about": "a {{age}}-year-old web/app developer based in Germany."
+  }
+}

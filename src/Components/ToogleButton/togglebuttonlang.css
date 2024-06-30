@@ -1,0 +1,24 @@
+.toggleButtonLangContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButtonLangContainer button {
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  border: 3px solid #7eb9e5;
+  cursor: pointer;
+  width: 10rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.toggleButtonLangContainer button:hover,
+.toggleButtonLangContainer button.click {
+  background-color: #7eb9e5;
+  color: black;
+}
