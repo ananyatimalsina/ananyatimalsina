@@ -7,6 +7,7 @@ import ToggleButtonLang from "./Components/ToogleButton/togglebuttonlang";
 
 function App() {
   const [t, i18n] = useTranslation("global");
+  var currentAge = getCurrentAge();
 
   function getCurrentAge() {
     const today = new Date();
@@ -19,6 +20,14 @@ function App() {
     return age.toString();
   }
 
+  function determineArticle(currentAge: string) {
+    if (currentAge === "11" || currentAge === "18" || currentAge[0] === "8") {
+      return "an";
+    } else {
+      return "a";
+    }
+  }
+
   return (
     <>
       <Header />
@@ -27,9 +36,14 @@ function App() {
         <div className="textContainer">
           <h2>{t("information.greeting")}</h2>
           <h1 style={{ fontSize: "2.5rem" }} className="brandingText">
-            {t("information.introduction")}
+            {t("information.introduction", { name: "Ananya Timalsina" })}
           </h1>
-          <p>{t("information.about", { age: getCurrentAge() })}</p>
+          <p>
+            {t("information.about", {
+              age: currentAge,
+              article: determineArticle(currentAge),
+            })}
+          </p>
           <br></br>
           <a href="mailto:developer@ananyatimalsina.com.np">
             {t("information.button")}

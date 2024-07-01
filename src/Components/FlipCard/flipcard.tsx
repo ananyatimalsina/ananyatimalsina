@@ -26,7 +26,7 @@ export default function FlipCard({
               <h3>{t("imageSlider." + component + ".title")}</h3>
               <p>{t("imageSlider." + component + ".body")}</p>
               <a target="_blank" href={buttonLink}>
-                {t("imageSlider." + component + ".button")}
+                {t("imageSlider.button")}
               </a>
             </div>
           </div>
