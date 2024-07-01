@@ -8,7 +8,7 @@
   "imageSlider": {
     "AsepriteTool": {
       "title": "AsepriteTool",
-      "body": "Aseprite ist ein pixel art tool that lets you create 2D animations for video games.",
+      "body": "Aseprite ist ein pixel art tool, mitdem sich 2d animationen für spiele erstellen lassen. Da diese Software open source ist, hat man die Option neben dem Zahlen auch die Software selbst zu kompilieren. Hier kommt AsepriteTool ins Spiel: Eine Anlaufstelle um Aseprite mit nur einem Befehl zu kompilieren und zu aktualisieren. Dies ist mein erstes und beliebtestes öffentlich veröffentlichtes Projekt, mit über 60 Sternen auf github und etwa tausend Aufrufen zum youtube video dazu.",
       "button": "Mehr Infos"
     }
   }

@@ -1,0 +1,93 @@
+.flipContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+}
+
+.card {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  float: left;
+  color: black;
+}
+
+@media (max-width: 1300px) {
+  .card {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #7eb9e5;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  background-color: #7eb9e5;
+  transform: rotateY(180deg);
+}
+
+.infoCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.infoCardContainer a {
+  text-decoration: none;
+  background: transparent;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.infoCardContainer a:hover {
+  background: black;
+  color: white;
+}
+
+.front img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

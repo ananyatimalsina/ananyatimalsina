@@ -1,8 +1,12 @@
-import React from "react";
-
 import snsbeauty from "../../assets/snsbeauty.png";
-import InfoCard from "../InfoCard/infocard";
+import FlipCard from "../FlipCard/flipcard";
 
 export default function ImageCarousel() {
-  return <></>;
+  return (
+    <FlipCard
+      img={snsbeauty}
+      component={"AsepriteTool"}
+      buttonLink={"https://github.com/ananyatimalsina/AsepriteTool"}
+    />
+  );
 }
