@@ -5,6 +5,10 @@ import ImageCarousel from "./Components/ImageCarousel/imagecarousel";
 import Footer from "./Components/Footer/footer";
 import ToggleButtonLang from "./Components/ToogleButton/togglebuttonlang";
 
+// TODO: Fix layouting for mobile & in general
+// TODO: Figure out image sizes
+// TODO: Implement Image Carousel
+
 function App() {
   const [t, i18n] = useTranslation("global");
   var currentAge = getCurrentAge();
