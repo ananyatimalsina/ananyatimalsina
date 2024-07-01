@@ -1,19 +1,27 @@
 .toggleButtonLangContainer {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .toggleButtonLangContainer {
+    top: auto;
+    bottom: 3.25rem;
+  }
+}
+
+.toggleButtonLangContainer button:nth-child(1) {
+  margin-right: 0.5rem;
 }
 
 .toggleButtonLangContainer button {
-  margin-right: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: -0.5rem;
   background-color: transparent;
+  border-radius: 0.5rem;
   border: 3px solid #7eb9e5;
   cursor: pointer;
-  width: 10rem;
-  height: 5rem;
-  font-size: 3rem;
+  padding: 0.5rem;
   color: white;
 }
 

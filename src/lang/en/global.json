@@ -1,7 +1,15 @@
 {
   "information": {
     "greeting": "Hello 👋",
-    "introduction": "I'm {{name}}",
-    "about": "a {{age}}-year-old web/app developer based in Germany."
+    "introduction": "I'm Ananya Timalsina,",
+    "about": "a {{age}}-year-old web/app developer based in Germany.",
+    "button": "Contact me"
+  },
+  "imageSlider": {
+    "AsepriteTool": {
+      "title": "AsepriteTool",
+      "body": "Aseprite is a pixel art tool that lets you create 2D artwork and animations for video games. Due to the open source nature of this software, along with buying it, one has the option to compile it from source. This is where AsepriteTool comes in: A one stop shop to compile and update Aseprite with just one command. This is my first ever and most popular publicly released project, with over 60 stars on github and the youtube video about it accumulating to roughly 60 thousend views.",
+      "button": "See more"
+    }
   }
 }

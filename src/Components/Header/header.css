@@ -1,18 +1,12 @@
 .headerContainer {
   display: flex;
   align-items: center;
-}
-
-.logoContainer {
-  flex: 19;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 #Logo {
-  width: 15rem;
-  height: 15rem;
+  width: 5rem;
+  height: 5rem;
   align-self: center;
 }
 

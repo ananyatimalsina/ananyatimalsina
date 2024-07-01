@@ -1,0 +1,12 @@
+.flipContainer {
+  border: 3px solid #7eb9e5;
+  border-radius: 0.5rem;
+  width: 45%;
+  height: 45%;
+}
+
+.showImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

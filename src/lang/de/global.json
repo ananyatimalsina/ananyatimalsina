@@ -1,7 +1,15 @@
 {
   "information": {
     "greeting": "Hallo 👋",
-    "introduction": "Ich bin {{name}}",
-    "about": "ein {{age}}-jähriger Web- und App-Entwickler mit Wohnsitz in Deutschland."
+    "introduction": "Ich bin Ananya Timalsina,",
+    "about": "ein {{age}}-jähriger Web- und App-Entwickler mit Wohnsitz in Deutschland.",
+    "button": "Kontakt"
+  },
+  "imageSlider": {
+    "AsepriteTool": {
+      "title": "AsepriteTool",
+      "body": "Aseprite ist ein pixel art tool that lets you create 2D animations for video games.",
+      "button": "Mehr Infos"
+    }
   }
 }

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./togglebuttonlang.css";
 
 export default function ToggleButtonLang() {
-  const [t, i18n] = useTranslation();
+  const [t, i18n] = useTranslation("global");
 
   const buttonEN = useRef<HTMLButtonElement>(null);
   const buttonDE = useRef<HTMLButtonElement>(null);
