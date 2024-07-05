@@ -25,10 +25,6 @@
   }
 }
 
-.toggleButtonLangContainer button:nth-child(1) {
-  margin-right: 0.5rem;
-}
-
 .toggleButtonLangContainer button {
   margin-bottom: -0.5rem;
   background-color: transparent;
@@ -37,6 +33,11 @@
   cursor: pointer;
   padding: 0.5rem;
   color: white;
+  margin-right: 0.5rem;
+}
+
+.toggleButtonLangContainer button:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .toggleButtonLangContainer button:hover,

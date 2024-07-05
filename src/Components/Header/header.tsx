@@ -52,14 +52,7 @@ export default function Header() {
           d="M9.38,30.26h33.13c-.32-8.73,5.58-11.08,2.92-23.54-9.85,18.02-13.17,12.7-19.5-2.62-5.79,15.47-10.19,20.64-19.27,2.62-3.6,10.52,2.99,15.44,2.72,23.54Z"
         />
       </svg>
-      <h1
-        className="brandingText"
-        style={{
-          marginBottom: "0.5rem",
-        }}
-      >
-        Ananya Timalsina
-      </h1>
+      <h1 className="brandingText">Ananya Timalsina</h1>
     </div>
   );
 }

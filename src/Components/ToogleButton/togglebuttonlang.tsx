@@ -8,6 +8,7 @@ export default function ToggleButtonLang() {
 
   const buttonEN = useRef<HTMLButtonElement>(null);
   const buttonDE = useRef<HTMLButtonElement>(null);
+  const buttonNEP = useRef<HTMLButtonElement>(null);
 
   const [language, setLanguage] = useState(i18n.language);
 
@@ -15,9 +16,15 @@ export default function ToggleButtonLang() {
     if (language === "en") {
       buttonEN.current?.classList.add("click");
       buttonDE.current?.classList.remove("click");
+      buttonNEP.current?.classList.remove("click");
     } else if (language === "de") {
-      buttonEN.current?.classList.remove("click");
       buttonDE.current?.classList.add("click");
+      buttonEN.current?.classList.remove("click");
+      buttonNEP.current?.classList.remove("click");
+    } else if (language === "nep") {
+      buttonNEP.current?.classList.add("click");
+      buttonEN.current?.classList.remove("click");
+      buttonDE.current?.classList.remove("click");
     }
     i18n.changeLanguage(language);
   }, [language]);
@@ -41,6 +48,15 @@ export default function ToggleButtonLang() {
         }}
       >
         DE
+      </button>
+      <button
+        ref={buttonNEP}
+        className="brandingText"
+        onClick={() => {
+          setLanguage("nep");
+        }}
+      >
+        NEP
       </button>
     </div>
   );
