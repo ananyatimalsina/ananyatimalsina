@@ -1,18 +1,18 @@
 .slider-wrapper {
-  height: 500px !important;
-  width: 800px !important;
+  width: 960px !important;
+  height: 540px !important;
 }
 
 @media (max-width: 1300px) {
   .slider-wrapper {
-    width: 600px !important;
-    height: 500px !important;
+    width: 640px !important;
+    height: 360px !important;
   }
 }
 
 @media (max-width: 650px) {
   .slider-wrapper {
-    width: 400px !important;
+    width: 290px !important;
     height: 600px !important;
   }
 }
@@ -60,8 +60,4 @@
 
 .carousel-button:enabled:hover path {
   fill: black;
-}
-
-.dot {
-  background-color: black !important;
 }

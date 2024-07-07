@@ -79,7 +79,6 @@ function App() {
   return (
     <>
       <Header />
-      <ToggleButtonLang />
       <div className="bodyContainer">
         <div className="textContainer">
           <h2>{t("information.greeting")}</h2>

@@ -6,22 +6,22 @@
 }
 
 .card {
-  width: 800px;
-  height: 500px;
+  width: 960px;
+  height: 540px;
   float: left;
   color: black;
 }
 
 @media (max-width: 1300px) {
   .card {
-    width: 600px;
-    height: 500px;
+    width: 640px;
+    height: 360px;
   }
 }
 
 @media (max-width: 650px) {
   .card {
-    width: 400px;
+    width: 290px;
     height: 600px;
   }
 }
