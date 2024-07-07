@@ -7,6 +7,9 @@ import litebook_mobile from "../../assets/litebook_mobile.png";
 import openrec from "../../assets/openrec.png";
 import openrec_mobile from "../../assets/openrec_mobile.png";
 
+import asepritetool from "../../assets/asepritetool.png";
+import asepritetool_mobile from "../../assets/asepritetool_mobile.png";
+
 import FlipCard from "../FlipCard/flipcard";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -70,6 +73,7 @@ export default function ImageCarousel() {
       showThumbs={false}
       showStatus={false}
       showIndicators={false}
+      infiniteLoop={true}
       renderArrowPrev={renderPrevArrow}
       renderArrowNext={renderNextArrow}
     >
@@ -92,8 +96,8 @@ export default function ImageCarousel() {
         buttonLink={"https://github.com/ananyatimalsina/openrec"}
       />
       <FlipCard
-        img={snsbeauty}
-        img_mobile={snsbeauty_mobile}
+        img={asepritetool}
+        img_mobile={asepritetool_mobile}
         component={"AsepriteTool"}
         buttonLink={"https://github.com/ananyatimalsina/AsepriteTool"}
       />

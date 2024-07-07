@@ -8,7 +8,15 @@
   "imageSlider": {
     "SnSBeauty": {
       "title": "SnSBeauty",
-      "body": "SnSBeauty is an appointment management Web-App for S&S Eyebrows. The frontend is built with React, while the backend is built with Django. The website is fully responsive."
+      "body": "SnSBeauty is an appointment management Web-App for S&S Eyebrows. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses Twilio for phone number verification."
+    },
+    "litebook": {
+      "title": "LiteBook",
+      "body": "LiteBook is a simple note taking app that lets you create, edit and delete notes. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses JWT for authentication."
+    },
+    "openrec": {
+      "title": "OpenRec",
+      "body": "OpenRec is a simple recipe sharing app that lets you create, edit and delete recipes. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses JWT for authentication."
     },
     "AsepriteTool": {
       "title": "AsepriteTool",
