@@ -5,17 +5,18 @@ import { useTranslation } from "react-i18next";
 interface FlipCardProps {
   img: string;
   img_mobile: string;
-  component: string;
+  title: string;
+  body: string;
   buttonLink: string;
 }
 
 export default function FlipCard({
   img,
   img_mobile,
-  component,
+  title,
+  body,
   buttonLink,
 }: FlipCardProps) {
-  const [t, i18n] = useTranslation("global");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = () => {
@@ -35,10 +36,10 @@ export default function FlipCard({
           </div>
           <div className="back">
             <div className="infoCardContainer">
-              <h3>{t("imageSlider." + component + ".title")}</h3>
-              <p>{t("imageSlider." + component + ".body")}</p>
+              <h3>{title}</h3>
+              <p>{body}</p>
               <a target="_blank" href={buttonLink}>
-                {t("imageSlider.button")}
+                See more
               </a>
             </div>
           </div>
