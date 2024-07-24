@@ -8,16 +8,5 @@
   width: 5rem;
   height: 5rem;
   align-self: center;
-}
-
-.logoCrown {
-  fill: #7eb9e5;
-  stroke: #000;
-  stroke-miterlimit: 10;
-  stroke-width: 3px;
-}
-
-.logoMask {
-  fill: #000;
-  stroke-width: 0px;
+  color: white;
 }

@@ -1,11 +1,11 @@
+import dressbase from "../../assets/dressbase.png";
+import dressbase_mobile from "../../assets/dressbase_mobile.png";
+
 import snsbeauty from "../../assets/snsbeauty.png";
 import snsbeauty_mobile from "../../assets/snsbeauty_mobile.png";
 
 import litebook from "../../assets/litebook.png";
 import litebook_mobile from "../../assets/litebook_mobile.png";
-
-import openrec from "../../assets/openrec.png";
-import openrec_mobile from "../../assets/openrec_mobile.png";
 
 import asepritetool from "../../assets/asepritetool.png";
 import asepritetool_mobile from "../../assets/asepritetool_mobile.png";
@@ -74,15 +74,25 @@ export default function ImageCarousel() {
       showStatus={false}
       showIndicators={false}
       infiniteLoop={true}
+      showArrows={!isTouchdevice}
       renderArrowPrev={renderPrevArrow}
       renderArrowNext={renderNextArrow}
     >
+      <FlipCard
+        img={dressbase}
+        img_mobile={dressbase_mobile}
+        title={"Dressbase"}
+        body={
+          "Dressbase is a fictional SaaS company specializing in AI-powered virtual dressing rooms. Developed for a school project in collaboration with Niklas Wenz, Jonathan Zdebel, Paul Schaut, and Luca Augsten."
+        }
+        buttonLink={"https://github.com/ananyatimalsina/dressbase"}
+      />
       <FlipCard
         img={snsbeauty}
         img_mobile={snsbeauty_mobile}
         title={"SnSBeauty"}
         body={
-          "SnSBeauty is an appointment management Web-App for S&S Eyebrows. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses Twilio for phone number verification."
+          "SnSBeauty is an appointment management web app designed for S&S Eyebrows. Built with React on the frontend and Django on the backend, the website is fully responsive and features Twilio for phone number verification."
         }
         buttonLink={"https://github.com/ananyatimalsina/SnSBeauty"}
       />
@@ -91,25 +101,16 @@ export default function ImageCarousel() {
         img_mobile={litebook_mobile}
         title={"LiteBook"}
         body={
-          "LiteBook is a simple note taking app that lets you create, edit and delete notes. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses JWT for authentication."
+          "LiteBook is a straightforward app that allows users to sell books online to Momox and Rebuy. Created with Flutter, it uses Hive for data storage and dio for handling web requests."
         }
         buttonLink={"https://github.com/ananyatimalsina/litebook"}
-      />
-      <FlipCard
-        img={openrec}
-        img_mobile={openrec_mobile}
-        title={"OpenRec"}
-        body={
-          "OpenRec is a simple recipe sharing app that lets you create, edit and delete recipes. The frontend is built with React, while the backend is built with Django. The website is fully responsive and uses JWT for authentication."
-        }
-        buttonLink={"https://github.com/ananyatimalsina/openrec"}
       />
       <FlipCard
         img={asepritetool}
         img_mobile={asepritetool_mobile}
         title={"AsepriteTool"}
         body={
-          "Aseprite is a pixel art tool that lets you create 2D artwork and animations for video games. Due to the open source nature of this software, along with buying it, one has the option to compile it from source. This is where AsepriteTool comes in: A one stop shop to compile and update Aseprite with just one command. This is my first ever and most popular publicly released project, with over 60 stars on github and the youtube video about it accumulating to roughly 60 thousend views."
+          "AsepriteTool simplifies the process of compiling and updating Aseprite, a popular pixel art tool for creating 2D artwork and animations. As my first and most popular public project, it has garnered over 60 stars on GitHub and approximately 60,000 views on its YouTube video."
         }
         buttonLink={"https://github.com/ananyatimalsina/AsepriteTool"}
       />
