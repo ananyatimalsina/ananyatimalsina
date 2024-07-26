@@ -1,14 +1,14 @@
-import dressbase from "../../assets/dressbase.png";
-import dressbase_mobile from "../../assets/dressbase_mobile.png";
+import dressbase from "../../assets/dressbase.webp";
+import dressbase_mobile from "../../assets/dressbase_mobile.webp";
 
-import snsbeauty from "../../assets/snsbeauty.png";
-import snsbeauty_mobile from "../../assets/snsbeauty_mobile.png";
+import snsbeauty from "../../assets/snsbeauty.webp";
+import snsbeauty_mobile from "../../assets/snsbeauty_mobile.webp";
 
-import litebook from "../../assets/litebook.png";
-import litebook_mobile from "../../assets/litebook_mobile.png";
+import litebook from "../../assets/litebook.webp";
+import litebook_mobile from "../../assets/litebook_mobile.webp";
 
-import asepritetool from "../../assets/asepritetool.png";
-import asepritetool_mobile from "../../assets/asepritetool_mobile.png";
+import asepritetool from "../../assets/asepritetool.webp";
+import asepritetool_mobile from "../../assets/asepritetool_mobile.webp";
 
 import FlipCard from "../FlipCard/flipcard";
 
@@ -17,9 +17,15 @@ import { Carousel } from "react-responsive-carousel";
 
 import "./imageslider.css";
 import useIsTouchdevice from "../useIsTouchdevice";
+import usePreloadImages from "../usePreloadImages";
 
 export default function ImageCarousel() {
   const isTouchdevice = useIsTouchdevice();
+  const preloadImages = isTouchdevice
+    ? [dressbase_mobile, snsbeauty_mobile, litebook_mobile, asepritetool_mobile]
+    : [dressbase, snsbeauty, litebook, asepritetool];
+
+  usePreloadImages(preloadImages);
 
   function renderPrevArrow(onClickHandler: () => void, hasPrev: boolean) {
     if (isTouchdevice) {

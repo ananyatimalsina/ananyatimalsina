@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./flipcard.css";
-import { useTranslation } from "react-i18next";
 
 interface FlipCardProps {
   img: string;
