@@ -38,7 +38,7 @@ export default function FlipCard({
               <h3>{title}</h3>
               <p>{body}</p>
               <a target="_blank" href={buttonLink}>
-                See more
+                More info
               </a>
             </div>
           </div>
