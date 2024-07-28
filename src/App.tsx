@@ -35,10 +35,10 @@ function App() {
           <h1 style={{ fontSize: "2.5rem" }} className="brandingText">
             I'm Ananya Timalsina,
           </h1>
-          <p>
+          <h3>
             {determineArticle(currentAge)} {currentAge}-year-old web/app
             developer based in Germany.
-          </p>
+          </h3>
           <br></br>
           <a href="mailto:developer@ananyatimalsina.com.np">Contact me</a>
         </div>
