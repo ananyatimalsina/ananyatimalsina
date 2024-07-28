@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://ananyatimalsina.github.io/",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "./predeploy.sh",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
