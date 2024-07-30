@@ -16,21 +16,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 import "./imageslider.css";
-import useIsTouchdevice from "../useIsTouchdevice";
 import usePreloadImages from "../usePreloadImages";
+import useIsTouchdevice from "../useIsTouchdevice";
 
 export default function ImageCarousel() {
-  const isTouchdevice = useIsTouchdevice();
-  const preloadImages = isTouchdevice
+  const preloadImages = useIsTouchdevice()
     ? [dressbase_mobile, snsbeauty_mobile, litebook_mobile, asepritetool_mobile]
     : [dressbase, snsbeauty, litebook, asepritetool];
 
   usePreloadImages(preloadImages);
 
   function renderPrevArrow(onClickHandler: () => void, hasPrev: boolean) {
-    if (isTouchdevice) {
-      return null;
-    }
     return (
       <button
         disabled={hasPrev ? false : true}
@@ -51,9 +47,6 @@ export default function ImageCarousel() {
   }
 
   function renderNextArrow(onClickHandler: () => void, hasNext: boolean) {
-    if (isTouchdevice) {
-      return null;
-    }
     return (
       <button
         disabled={hasNext ? false : true}
@@ -79,8 +72,8 @@ export default function ImageCarousel() {
       showThumbs={false}
       showStatus={false}
       showIndicators={false}
+      swipeable={false}
       infiniteLoop={true}
-      showArrows={!isTouchdevice}
       renderArrowPrev={renderPrevArrow}
       renderArrowNext={renderNextArrow}
     >

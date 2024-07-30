@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./flipcard.css";
+import useIsTouchdevice from "../useIsTouchdevice";
 
 interface FlipCardProps {
   img: string;
@@ -17,6 +18,8 @@ export default function FlipCard({
   buttonLink,
 }: FlipCardProps) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isTouchDevice = true;
+  const content = useRef<HTMLDivElement>(null);
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -28,8 +31,29 @@ export default function FlipCard({
 
   return (
     <div className="fipContainer">
-      <div className="card">
-        <div className="content">
+      <div
+        className="card"
+        onMouseEnter={
+          !isTouchDevice
+            ? () => {
+                content.current?.classList.add("flip");
+              }
+            : () => {}
+        }
+        onMouseLeave={
+          !isTouchDevice
+            ? () => {
+                content.current?.classList.remove("flip");
+              }
+            : () => {}
+        }
+        onClick={
+          isTouchDevice
+            ? () => content.current?.classList.toggle("flip")
+            : () => {}
+        }
+      >
+        <div className="content" ref={content}>
           <div className="front">
             <img src={windowWidth > 650 ? img : img_mobile} alt="" />
           </div>
