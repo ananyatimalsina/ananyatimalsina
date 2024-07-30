@@ -18,7 +18,7 @@ export default function FlipCard({
   buttonLink,
 }: FlipCardProps) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const isTouchDevice = true;
+  const isTouchDevice = useIsTouchdevice();
   const content = useRef<HTMLDivElement>(null);
 
   const handleResize = () => {
