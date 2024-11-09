@@ -3,11 +3,11 @@
 a student with a passion for computer science and web/app development.
 
 ### My stats
-[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=ananyatimalsina&count_private=true&theme=blue-green&hide_border=true&border_radius=10&showicons=true)]()
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ananyatimalsina&theme=blue-green&hide_border=true&border_radius=10&showicons=true)
-[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ananyatimalsina&langs_count=4&theme=blue-green&hide_border=true&border_radius=10)]()
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=ananyatimalsina&count_private=true&theme=blue_navy&hide_border=true&border_radius=10&showicons=true)]()
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ananyatimalsina&theme=blue_navy&hide_border=true&border_radius=10&showicons=true)
+[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ananyatimalsina&langs_count=4&theme=blue_navy&hide_border=true&border_radius=10)]()
 
-### My Skillset
+### My skillset
 ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vsc&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
